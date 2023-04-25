@@ -3,6 +3,9 @@ fun main(){
     println(words("Amanda"))
      multiples()
     var currentAccount=CurrentAccount("789298738","Lumumba",300000)
+    println(currentAccount.accountNumber)
+    println(currentAccount.accountName)
+    println(currentAccount.balance)
 
 }
 
@@ -12,7 +15,7 @@ fun main(){
 fun words(word:String):Array<Any>{
   //var myWord="Amanda"
     arrayListOf<Any>()
-    return word,
+    return word
 
    // return word.length(words)
 
@@ -28,6 +31,7 @@ fun words(word:String):Array<Any>{
 fun multiples (numbers:Int) {
 
     for (number in numbers)
+
         if (number % 6 == 0 && number % 8 == 0)
             println("Bingo")
 }
@@ -42,12 +46,10 @@ fun multiples (numbers:Int) {
 //this format: “Account number x with balance y is operated by z” (6pts)
 class CurrentAccount( var accountNumber: String,var accountName:String, var balance:Int  ) {
     fun deposit(amount: Double, balance: Int): Double {
-        amount=2000.0
-        balance+=amount
-        return balance
 
-//        var newBalance = balance + amount
-//        return newBalance
+
+        var newBalance = balance + amount
+     return newBalance
 
     }
 
