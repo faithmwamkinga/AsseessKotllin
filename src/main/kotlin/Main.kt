@@ -1,7 +1,7 @@
 fun main(){
     //words("Amanda")
     println(words("Amanda"))
-     multiples()
+     multiples(1000)
     var currentAccount=CurrentAccount("789298738","Lumumba",300000)
     println(currentAccount.accountNumber)
     println(currentAccount.accountName)
@@ -12,14 +12,14 @@ fun main(){
 //Write and invoke one function that takes in a random string and returns the
 //following values: first character, last character, length of the string and
 //whether it begins with a vowel or not. (6pts)
-fun words(word:String):Array<Any>{
+fun words(word:String):Array<String>{
   //var myWord="Amanda"
-    arrayListOf<Any>()
-    return word
+    //arrayListOf<String>()
+    if (word.startsWith())
 
    // return word.length(words)
 
-}
+ return words("Amanda")}
 
 
 //input string
@@ -30,11 +30,12 @@ fun words(word:String):Array<Any>{
 
 fun multiples (numbers:Int) {
 
-    for (number in numbers)
+    for (number in numbers){
 
-        if (number % 6 == 0 && number % 8 == 0)
+        if (number<1000&& number % 6 == 0 && number % 8 == 0)
+            number++
             println("Bingo")
-}
+}}
 
 //5. Create a class CurrentAccount with the following attributes: account number,
 //account name, balance. It has the following functions:
@@ -60,6 +61,20 @@ class CurrentAccount( var accountNumber: String,var accountName:String, var bala
     }
 
     fun details(accountNumber: String, balance: Int, accountName: String): String {
-        println("Account number ${accountNumber} with balance ${balance} is operated by ${accountName}")
+        return ("Account number ${accountNumber} with balance ${balance} is operated by ${accountName}")
     }
+}
+
+//Create a function that takes in a password as a parameter. For a password to
+//be valid it must meet the following conditions:
+//1. Must be at least 8 characters long
+//2. Must be at most 16 characters long
+//3. Must not be “password”
+//4. Must contain a digit
+//Your function should determine whether the password provided is valid or not.
+//The function returns true/false (7pts)
+
+fun  myPasword(password:String):Boolean{
+    if ()
+
 }
